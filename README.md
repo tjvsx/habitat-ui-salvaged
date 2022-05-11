@@ -1,4 +1,3 @@
 # habitat-ui-salvaged
 
-### Run UI:
-```node scripts/html.js```
+Run UI: ```node scripts/html.js```
