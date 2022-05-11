@@ -1,0 +1,78 @@
+#labels > p {
+  border: 1px solid;
+  border-radius: 1em;
+  padding: .5em;
+  margin: 0 .3em 0 0;
+  font-size: .7em;
+  font-weight: bold;
+  color: var(--color-text);
+  background: none;
+}
+
+#labels {
+  display: flex;
+  flex-direction: row;
+  margin: .5rem 0;
+  color: var(--color-grey);
+  font-weight: lighter;
+}
+
+habitat-color-toggle {
+  position: sticky;
+  transform: translateZ(1000px);
+  top: 16px;
+  right: 24px;
+  float: right;
+}
+
+.flow {
+  margin: 1em;
+  max-width: min(80ch, 100%);
+}
+
+.flow > button {
+  display: inline-grid;
+}
+
+.flow p > span {
+  font-family: var(--font-family-mono);
+}
+
+.flow > input {
+  width: 100%;
+}
+
+button.expanded,
+.button.expanded {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background: var(--color-bg);
+  animation: opacity .3s ease-in;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.overlay.alert {
+  background: #404040aa;
+}
+
+.overlay > .listitem {
+  background-color: var(--color-white);
+}
+
+.alert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+

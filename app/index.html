@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <meta name='referrer' content='no-referrer'>
+    <link rel='stylesheet' type='text/css' href='index.css'>
+    <link rel='icon' type='image/png' href='/lib/assets/logo.png'>
+    <link rel='apple-touch-icon' href='/lib/assets/logo.png'>
+    <meta name='twitter:card' content='summary_large_image'>
+    <meta name='twitter:site' content='@0xhabitat'>
+    <meta property='og:type' content='website'>
+    <meta property='og:url' content='https://0xhabitat.org'>
+    <meta property='og:description' content='Scaling communities with Rollup technology.'>
+    <meta property='og:image' content='/lib/assets/preview-v2.jpg'>
+    <meta property='og:title' content='Habitat - Communities'>
+    <title>Habitat - Communities</title>
+    <script src='/lib/common.js'></script>
+    <script type='module' src='/lib/HabitatBackground.js'></script>
+    <script type='module' src='/lib/HabitatSidebar.js'></script>
+    <script type='module' src='/lib/HabitatAccount.js'></script>
+    <script type='module' src='/lib/HabitatCommunities.js'></script>
+    <script type='module' src='/lib/HabitatCommunity.js'></script>
+    <script type='module' src='/lib/HabitatProposal.js'></script>
+    <script type='module' src='/lib/HabitatEvolution.js'></script>
+    <script type='module' src='/lib/HabitatTools.js'></script>
+    <script type='module' src='index.js'></script>
+  </head>
+  <body>
+    <div style='position:absolute;top:0;left:0;right:0;background:red;z-index:9999;'>
+    </div>
+    <input type='checkbox' id='sidebar-toggle'>
+    <habitat-background></habitat-background>
+    <section style='perspective:1000px; height:100vh;'>
+      <section id='left'>
+        <habitat-sidebar></habitat-sidebar>
+      </section>
+      <section id='content'></section>
+    </section>
+    <label for='sidebar-toggle' id='sidebar-btn'></label>
+  </body>
+</html>

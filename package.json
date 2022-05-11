@@ -1,0 +1,11 @@
+{
+  "name": "habitat-UI",
+  "version": "1.0.1",
+  "author": "0xHabitat",
+  "license": "Unlicense",
+  "type": "module",
+  "devDependencies": {
+    "ethers": "=5.5.2",
+    "mocha": "=9.1.3"
+  }
+}
